@@ -1,0 +1,262 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc; /* Light background for a cleaner look */
+  }
+  
+  /* Container for the whole app */
+  .circle-app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .circle-title {
+    font-size: 2.5rem; /* Larger font size for prominence */
+    font-weight: 700;
+    color: #3b8dff;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .circle-title::after {
+    content: '✨';
+    font-size: 40px;
+    color: gold;
+    position: absolute;
+    right: -40px;
+    top: 0;
+  }
+  
+  /* Subtitle styling */
+  .circle-subtitle {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .circle-subtitle .highlight {
+    color: #3b8dff;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .circle-subtitle .highlight::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    font-size: 24px;
+    top: -5px;
+    color: gold;
+  }
+  
+  /* Highlight background */
+  .highlight-background {
+    background-color: rgba(59, 141, 255, 0.1);
+    border-radius: 12px;
+    padding: 8px 12px;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(59, 141, 255, 0.2);
+  }
+  
+  /* Steps container */
+  .steps-container {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(59, 141, 255, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .step:hover {
+    box-shadow: 0px 6px 15px rgba(59, 141, 255, 0.2);
+  }
+  
+  .step-number {
+    width: 45px;
+    height: 45px;
+    background-color: #3b8dff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin-right: 20px;
+    box-shadow: 0px 4px 8px rgba(59, 141, 255, 0.2);
+  }
+  
+  .step-details h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #3b8dff;
+  }
+  
+  .step-details p {
+    font-size: 16px;
+    color: #666;
+    margin: 4px 0;
+  }
+  
+  /* Buttons container */
+  .buttons-container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Get Started button styling */
+  .get-started-button {
+    background-color: #3b8dff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 6px 12px rgba(59, 141, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .get-started-button:hover {
+    background-color: #347bdd;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(59, 141, 255, 0.4);
+  }
+  
+  /* Go Back button styling */
+  .go-back-button {
+    background-color: transparent;
+    color: #3b8dff;
+    border: 2px solid #3b8dff;
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .go-back-button:hover {
+    background-color: #f0f5ff;
+  }
+  
+  /* Terms styling */
+  .terms {
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+  }
+  
+  .terms a {
+    color: #3b8dff;
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .circle-title {
+      font-size: 2rem;
+    }
+  
+    .circle-subtitle {
+      font-size: 1.125rem;
+    }
+  
+    .steps-container {
+      padding: 0 10px;
+    }
+  
+    .step {
+      padding: 15px;
+      flex-direction: column;
+    }
+  
+    .step-number {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+    }
+  
+    .step-details h4 {
+      font-size: 18px;
+    }
+  
+    .step-details p {
+      font-size: 14px;
+    }
+  
+    .get-started-button, .go-back-button {
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .circle-title {
+      font-size: 1.75rem;
+    }
+  
+    .circle-subtitle {
+      font-size: 1rem;
+    }
+  
+    .step {
+      padding: 10px;
+    }
+  
+    .step-number {
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+    }
+  
+    .step-details h4 {
+      font-size: 16px;
+    }
+  
+    .step-details p {
+      font-size: 12px;
+    }
+  
+    .get-started-button, .go-back-button {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  
+    .terms {
+      font-size: 12px;
+    }
+  }
+  

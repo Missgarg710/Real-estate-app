@@ -1,0 +1,211 @@
+/* Base styles for the modal */
+.perks-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay background */
+  }
+  
+  .perks-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px; /* Slightly less rounded */
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+  }
+  
+  /* Header styles */
+  .perks-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Increased space */
+  }
+  
+  .perks-header h3 {
+    font-size: 1.75rem; /* Larger font size */
+    font-weight: bold;
+    color: #333;
+    text-align: center; /* Center align header text */
+  }
+  
+  .highlight {
+    color: #007bff; /* Blue color for 'Zero' */
+    font-weight: bold;
+  }
+  
+  .sparkles {
+    margin-left: 10px;
+    font-size: 1.75rem; /* Larger size for better visibility */
+  }
+  
+  /* Approved box styles */
+  .approved-box {
+    background-color: #e8f0ff;
+    border-radius: 20px; /* More rounded corners */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Increased space */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .checkmark-icon {
+    width: 80px; /* Increased size */
+    height: 80px; /* Increased size */
+    margin-bottom: 10px; /* Space between icon and text */
+    max-width: 100%; /* Responsive size */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .approved-text {
+    color: #4b9cf2;
+    font-weight: bold;
+    font-size: 1.5rem; /* Font size adjustment */
+    text-align: center; /* Center text */
+  }
+  
+  /* Perks list styles */
+  .perks-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1.1rem;
+  }
+  
+  .perks-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem; /* Slightly larger font size */
+    color: #333;
+  }
+  
+  .check-icon {
+    color: #4b9cf2;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Pay button styles */
+  .pay-button {
+    background-color: #4ba3f2; /* Light blue button */
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 30px; /* More rounded corners */
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  }
+  
+  .pay-button:hover {
+    background-color: #5cb7ff; /* Slightly brighter on hover */
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    transform: translateY(-2px); /* Lifted effect */
+  }
+  
+  .arrow {
+    margin-left: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .perks-content {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .perks-header h3 {
+      font-size: 1.5rem; /* Adjust font size */
+    }
+  
+    .highlight, .sparkles {
+      font-size: 1.5rem; /* Adjust font size */
+    }
+  
+    .approved-box {
+      padding: 15px;
+    }
+  
+    .checkmark-icon {
+      width: 60px; /* Adjust size */
+      height: 60px; /* Adjust size */
+    }
+  
+    .approved-text {
+      font-size: 1.25rem; /* Adjust font size */
+    }
+  
+    .perks-list li {
+      font-size: 1rem; /* Adjust font size */
+    }
+  
+    .pay-button {
+      padding: 12px 24px;
+      font-size: 1rem; /* Adjust font size */
+    }
+  
+    .arrow {
+      font-size: 1.5rem; /* Adjust size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .perks-content {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .perks-header h3 {
+      font-size: 1.25rem; /* Adjust font size */
+    }
+  
+    .highlight, .sparkles {
+      font-size: 1.25rem; /* Adjust font size */
+    }
+  
+    .approved-box {
+      padding: 10px;
+    }
+  
+    .checkmark-icon {
+      width: 50px; /* Adjust size */
+      height: 50px; /* Adjust size */
+    }
+  
+    .approved-text {
+      font-size: 1rem; /* Adjust font size */
+    }
+  
+    .perks-list li {
+      font-size: 0.9rem; /* Adjust font size */
+    }
+  
+    .pay-button {
+      padding: 10px 20px;
+      font-size: 0.9rem; /* Adjust font size */
+    }
+  
+    .arrow {
+      font-size: 1.25rem; /* Adjust size */
+    }
+  }
+  
